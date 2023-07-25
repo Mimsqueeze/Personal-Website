@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import Resume from "@/assets/Minsi Hu Resume.pdf"
+import Resume from "@/assets/Minsi_Hu_Resume.pdf"
 import HText from "@/shared/HText";
 import { BsFiletypePdf, BsDownload } from "react-icons/bs"
 
