@@ -12,7 +12,7 @@ const Skill = ({ icon, title, description}: Props) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.75 }}
-      transition={{ duration: 0.75 }}
+      transition={{ duration: 1 }}
       variants={{hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1 }}}
       className="mt-5 rounded-md border-2 border-gray-100 px-5 pt-10 text-center bg-gray-20 w-full h-full"
     >

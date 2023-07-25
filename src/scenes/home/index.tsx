@@ -26,7 +26,7 @@ const Home = ({ setSelectedPage }: Props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
@@ -48,13 +48,13 @@ const Home = ({ setSelectedPage }: Props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            transition={{ delay: 0.25, duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <p className="text-md mt-8">
+            <p className="text-lg mt-8">
               Hi! I'm Minsi Hu. I'm currently a rising sophomore attending the
               University of Maryland, pursuing a double degree in Math and
               Computer Science.
@@ -73,9 +73,9 @@ const Home = ({ setSelectedPage }: Props) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1 }}
           variants={{
-            hidden: { opacity: 0, x: 50 },
+            hidden: { opacity: 0, x: 100 },
             visible: { opacity: 1, x: 0 },
           }}
         >
