@@ -13,7 +13,6 @@ type Props = {
 const Contact = ({ setSelectedPage }: Props) => {
   const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-gray-700`;
   const isAboveSmallScreen = useMediaQuery("(min-width: 480px)");
-  const useVm = useMediaQuery("(min-width: 410px)");
 
   const {
     register,
@@ -29,7 +28,7 @@ const Contact = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="contact" className="bg-white overflow-x-hidden">
+    <section id="contact" className="bg-white overflow-hidden">
       <div className="mx-auto min-h-full w-5/6 py-12">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}
@@ -50,7 +49,7 @@ const Contact = ({ setSelectedPage }: Props) => {
                   visible: { opacity: 1, x: 0 },
                 }}
               >
-                <HText size={(useVm) ? "text-5xl" : "text-[11vw]"}>
+                <HText size="sm:text-6xl text-[11vw]">
                   <span className="text-primary-500">CONTACT</span> ME
                 </HText>
               </motion.div>

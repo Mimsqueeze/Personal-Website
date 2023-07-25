@@ -1,6 +1,5 @@
-import useMediaQuery from "@/hooks/useMediaQuery";
 import HText from "@/shared/HText";
-import { SelectedPage} from "@/shared/types";
+import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 
 type Props = {
@@ -8,11 +7,11 @@ type Props = {
 };
 
 const Projects = ({ setSelectedPage }: Props) => {
-  const useVm = useMediaQuery("(min-width: 410px)");
-  
+  const projectStyles = "mb-16 mt-16 md:w-4/5 bg-primary-300 p-10";
+
   return (
-    <section id="projects" className="bg-gray-20 overflow-x-hidden">
-      <div className="mx-auto min-h-full w-5/6 py-20">
+    <section id="projects" className="overflow-hidden bg-gray-20">
+      <div className="mx-auto min-h-full w-5/6 pt-20">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.Projects)}
         >
@@ -28,34 +27,138 @@ const Projects = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <HText size={(useVm) ? "text-5xl" : "text-[11vw]"}>PROJECTS</HText>
-            <p className="text-lg my-5">
-              A list of projects I've done.
-            </p>
+            <HText size="sm:text-6xl text-[11vw]">PROJECTS</HText>
+            <p className="text-lg sm:text-xl my-5">A list of projects I've done.</p>
           </motion.div>
-
-          {/* DIGIT RECOGNIZER */}
-          <motion.div>
-
-          </motion.div>
-
-          {/* SORTING SIMULATOR */}
-          <motion.div>
-
-          </motion.div>
-          
-          {/* MIMS RUCOY CALCULATOR */}
-          <motion.div>
-
-          </motion.div>
-          
-          {/* RUCOY VISION BOT */}
-          <motion.div>
-
-          </motion.div>
-          
         </motion.div>
       </div>
+      {/* DIGIT RECOGNIZER */}
+      <motion.div
+        className={`${projectStyles} md:rounded-none md:rounded-r-2xl rounded-2xl w-5/6 md:mx-0 mx-auto`}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 1 }}
+        variants={{
+          hidden: { opacity: 0, x: -300 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
+        <div className="pb-8">
+          <HText size="text-2xl md:text-4xl">Digit Recognizer</HText>
+          <p className="text-lg md:text-2xl text-primary-700">
+            An application that recognizes handwritten digits.
+          </p>
+        </div>
+        <div className="items-center md:flex md:justify-between md:gap-10">
+          <p className="text-md md:text-xl basis-1/2 pb-8">
+            Developed a C++ implementation of a multi-layer convolutional neural
+            network from scratch using Eigen3, a powerful linear algebra
+            library. It utilizes deep learning techniques to recognize
+            handwritten digits given from the{" "}
+            <a
+              href="http://yann.lecun.com/exdb/mnist/index.html"
+              target="_blank"
+              className="text-primary-700"
+            >
+              MNIST
+            </a>{" "}
+            database. The program takes inputs 28x28 pixel images of a
+            handwritten digit and predicts the corresponding numerical value.
+          </p>
+          <p className="basis-1/2 text-center">[insert image here]</p>
+        </div>
+      </motion.div>
+
+      {/* SORTING SIMULATOR */}
+      <motion.div
+        className={`${projectStyles} md:rounded-none md:rounded-l-2xl rounded-2xl w-5/6 md:mx-0 mx-auto md:ml-[20%]`}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 1 }}
+        variants={{
+          hidden: { opacity: 0, x: 300 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
+        <div className="pb-8">
+          <HText size="text-2xl md:text-4xl">Sorting Simulator</HText>
+          <p className="text-lg md:text-2xl text-primary-700">
+            A visualizer for different sorting algorithms.
+          </p>
+        </div>
+        <div className="items-center md:flex md:justify-between md:gap-10">
+          <p className="text-md md:text-xl basis-1/2 pb-8">
+            Developed a sorting algorithm visualizer using Java Swing to
+            showcase real-time updates to arrays as various sorting algorithms
+            like bubble sort, insertion sort, merge sort, and quick sort are
+            applied. Sorting Simulator also allows sorting algorithms
+            comparisons by providing relevant statistics including sorting time,
+            number of comparisons, number of insertions, etc.
+          </p>
+          <p className="basis-1/2 text-center">[insert image here]</p>
+        </div>
+      </motion.div>
+
+      {/* MIMS RUCOY CALCULATOR */}
+      <motion.div
+        className={`${projectStyles} md:rounded-none md:rounded-r-2xl rounded-2xl md:w-4/5 w-5/6 md:mx-0 mx-auto`}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 1 }}
+        variants={{
+          hidden: { opacity: 0, x: -300 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
+        <div className="pb-8">
+          <HText size="text-2xl md:text-4xl">Mims' Rucoy Calulator</HText>
+          <p className="text-lg md:text-2xl text-primary-700">
+            A utility discord chatbot for an online gaming community.
+          </p>
+        </div>
+        <div className="items-center md:flex md:justify-between md:gap-10">
+          <p className="text-md md:text-xl basis-1/2 pb-8">
+            Led a team that develops and hosts an intelligent utility Discord
+            bot using Java Discord API, deployed in over 4600 servers, assisting
+            thousands of users daily in optimizing their gameplay. Features
+            intuitive commands, intelligent functionality, and a clean yet
+            informative UI.
+          </p>
+          <p className="basis-1/2 text-center">[insert image here]</p>
+        </div>
+      </motion.div>
+
+      {/* RUCOY VISION BOT */}
+      <motion.div
+        className={`${projectStyles} md:rounded-none md:rounded-l-2xl rounded-2xl md:w-4/5 w-5/6 md:mx-0 mx-auto md:ml-[20%]`}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 1 }}
+        variants={{
+          hidden: { opacity: 0, x: 300 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
+        <div className="pb-8">
+          <HText size="text-2xl md:text-4xl">Rucoy Vision Bot</HText>
+          <p className="text-lg md:text-2xl text-primary-700">
+            An automated game bot utilizing image recognition.
+          </p>
+        </div>
+        <div className="items-center md:flex md:justify-between md:gap-10">
+          <p className="text-md md:text-xl basis-1/2 pb-8">
+            Developed an image processing and recognition application using
+            OpenCV and PyAutoGUI, which captures screen images, identifies
+            targets, and automates actions to improve a user's experience in a
+            multiplayer game.
+          </p>
+          <p className="basis-1/2 text-center">[insert image here]</p>
+        </div>
+      </motion.div>
     </section>
   );
 };

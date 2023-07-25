@@ -127,10 +127,8 @@ type Props = {
 };
 
 const Skills = ({ setSelectedPage }: Props) => {
-  const useVm = useMediaQuery("(min-width: 410px)");
-  
   return (
-    <section id="skills" className="bg-primary-100 overflow-x-hidden">
+    <section id="skills" className="bg-primary-100 overflow-hidden">
       <div className="mx-auto min-h-full w-5/6 py-20">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.Skills)}
@@ -147,8 +145,8 @@ const Skills = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <HText size={(useVm) ? "text-5xl" : "text-[11vw]"}>SKILLS</HText>
-            <p className="text-lg my-5">
+            <HText size="sm:text-6xl text-[11vw]">SKILLS</HText>
+            <p className="text-lg sm:text-xl my-5">
               A list of technologies I'm familiar with.
             </p>
           </motion.div>
