@@ -2,12 +2,15 @@ import { SelectedPage } from "@/shared/types";
 import MinsiHeadshot from "/minsi_headshot.png";
 import { motion } from "framer-motion";
 import Htext from "@/shared/HText";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
 const Home = ({ setSelectedPage }: Props) => {
+  const useVm = useMediaQuery("(min-width: 600px)");
+  
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
@@ -29,11 +32,11 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <Htext size="text-6xl">MINSI HU</Htext>
+            <Htext size={(useVm) ? "text-8xl" : "text-[16vw]"}>MINSI HU</Htext>
             <a
               href="https://umd.edu/"
               target="_blank"
-              className="basis-3/5 whitespace-nowrap text-xl text-primary-500"
+              className="basis-3/5 text-2xl text-primary-500"
             >
               CS and Mathematics @ University of Maryland
             </a>

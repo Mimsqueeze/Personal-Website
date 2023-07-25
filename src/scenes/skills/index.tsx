@@ -22,6 +22,7 @@ import { BiLogoJava } from "react-icons/bi";
 
 import { motion } from "framer-motion";
 import Skill from "./Skill";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 const iconStyle = "h-6 w-6 text-primary-500";
 const skills: Array<SkillType> = [
@@ -133,6 +134,8 @@ type Props = {
 };
 
 const Skills = ({ setSelectedPage }: Props) => {
+  const useVm = useMediaQuery("(min-width: 410px)");
+  
   return (
     <section id="skills" className="bg-primary-100">
       <div className="mx-auto min-h-full w-5/6 py-20">
@@ -151,7 +154,7 @@ const Skills = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <HText size="text-5xl">SKILLS</HText>
+            <HText size={(useVm) ? "text-5xl" : "text-[11vw]"}>SKILLS</HText>
             <p className="text-md my-5">
               A list of technologies I'm familiar with.
             </p>

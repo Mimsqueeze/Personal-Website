@@ -58,11 +58,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               ""
             )}
           </div>
+
           <div>
             <a href="https://github.com/Mimsqueeze" target="_blank" className={`${flexBetween} whitespace-nowrap w-full gap-1 transition duration-500 hover:text-primary-300`}>
               <img src={GithubLogo} alt="github logo" className="w-[30px] rounded-full"></img> Github | Visit →
             </a>
           </div>
+          
         </div>
       </div>
     </nav>

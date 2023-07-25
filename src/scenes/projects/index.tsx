@@ -1,3 +1,4 @@
+import useMediaQuery from "@/hooks/useMediaQuery";
 import HText from "@/shared/HText";
 import { SelectedPage} from "@/shared/types";
 import { motion } from "framer-motion";
@@ -7,6 +8,8 @@ type Props = {
 };
 
 const Projects = ({ setSelectedPage }: Props) => {
+  const useVm = useMediaQuery("(min-width: 410px)");
+  
   return (
     <section id="projects" className="bg-gray-20">
       <div className="mx-auto min-h-full w-5/6 py-20">
@@ -25,7 +28,7 @@ const Projects = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <HText size="text-5xl">PROJECTS</HText>
+            <HText size={(useVm) ? "text-5xl" : "text-[11vw]"}>PROJECTS</HText>
             <p className="text-md my-5">
               A list of projects I've done.
             </p>
