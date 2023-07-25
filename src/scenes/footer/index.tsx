@@ -60,7 +60,7 @@ const Footer = () => {
           <p className="my-5">
             You can find the source code to this Project's source code
             <a
-              href="https://github.com/Mimsqueeze/website"
+              href="https://github.com/Mimsqueeze/Personal-Website"
               target="_blank"
               className="text-primary-500"
             >
