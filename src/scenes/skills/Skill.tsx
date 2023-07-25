@@ -1,4 +1,3 @@
-import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 
 const childVariant = {
