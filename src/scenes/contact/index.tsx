@@ -29,7 +29,7 @@ const Contact = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="contact" className="bg-white">
+    <section id="contact" className="bg-white overflow-x-hidden">
       <div className="mx-auto min-h-full w-5/6 py-12">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}
@@ -172,7 +172,7 @@ const Contact = ({ setSelectedPage }: Props) => {
                         </p>
                       </button>
                     ) : (
-                      <button className="w-full text-lg mt-5 border-gray-100 border-2 bg-gray-200 rounded-3xl px-10 py-3 transition duration-500 hover:text-primary-700 hover:border-primary-700">
+                      <button className="text-lg mt-5 border-gray-100 border-2 bg-gray-200 rounded-3xl px-10 py-3 transition duration-500 hover:text-primary-700 hover:border-primary-700">
                       <p className="whitespace-nowrap flex gap-1 align-text-top">Resume <BsDownload className="relative top-1 text-primary-700"/>
                       </p>
                     </button>

@@ -137,7 +137,7 @@ const Skills = ({ setSelectedPage }: Props) => {
   const useVm = useMediaQuery("(min-width: 410px)");
   
   return (
-    <section id="skills" className="bg-primary-100">
+    <section id="skills" className="bg-primary-100 overflow-x-hidden">
       <div className="mx-auto min-h-full w-5/6 py-20">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.Skills)}

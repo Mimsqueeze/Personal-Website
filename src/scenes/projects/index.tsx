@@ -11,7 +11,7 @@ const Projects = ({ setSelectedPage }: Props) => {
   const useVm = useMediaQuery("(min-width: 410px)");
   
   return (
-    <section id="projects" className="bg-gray-20">
+    <section id="projects" className="bg-gray-20 overflow-x-hidden">
       <div className="mx-auto min-h-full w-5/6 py-20">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.Projects)}
