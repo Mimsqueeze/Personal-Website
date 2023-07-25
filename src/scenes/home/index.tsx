@@ -1,6 +1,5 @@
 import { SelectedPage } from "@/shared/types";
 import MinsiHeadshot from "/minsi_headshot.png";
-import UMDLogo from "/umd_logo.png";
 import { motion } from "framer-motion";
 import Htext from "@/shared/HText";
 
@@ -36,7 +35,7 @@ const Home = ({ setSelectedPage }: Props) => {
               target="_blank"
               className="basis-3/5 whitespace-nowrap text-xl text-primary-500"
             >
-              CS and Mathematics @ University of Maryland <img alt="umd-logo" src={UMDLogo} className="inline w-[30px]" />
+              CS and Mathematics @ University of Maryland
             </a>
           </motion.div>
 
