@@ -1,5 +1,5 @@
-import Logo from "@/assets/icon.svg";
-import GithubLogo from "@/assets/github_logo.png";
+import Logo from "/icon.svg";
+import GithubLogo from "/github_logo.png";
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";

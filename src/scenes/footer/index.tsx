@@ -1,4 +1,4 @@
-import Logo from "@/assets/icon.svg";
+import Logo from "/icon.svg";
 import { SiLinkedin, SiDiscord, SiGithub } from "react-icons/si";
 
 const Footer = () => {

@@ -1,6 +1,6 @@
 import { SelectedPage } from "@/shared/types";
-import MinsiHeadshot from "@/assets/minsi_headshot.jpg";
-import UMDLogo from "@/assets/umd_logo.png";
+import MinsiHeadshot from "/minsi_headshot.png";
+import UMDLogo from "/umd_logo.png";
 import { motion } from "framer-motion";
 import Htext from "@/shared/HText";
 
