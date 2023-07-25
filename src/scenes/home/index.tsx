@@ -32,7 +32,7 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <Htext size={(useVm) ? "text-8xl" : "text-[16vw]"}>MINSI HU</Htext>
+            <Htext size={(useVm) ? "text-8xl" : "text-[16vw]"}><span className="whitespace-nowrap">MINSI HU</span></Htext>
             <a
               href="https://umd.edu/"
               target="_blank"
@@ -69,7 +69,7 @@ const Home = ({ setSelectedPage }: Props) => {
         {/* IMAGE */}
         <motion.div
           className="flex basis-3/5 justify-center md:z-10
-          md:ml-40 md:mt-16 md:justify-items-end"
+          md:ml-20 md:mt-16 md:justify-items-end"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
