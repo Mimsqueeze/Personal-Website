@@ -10,10 +10,9 @@ type Props = {
   icon: JSX.Element;
   title: string;
   description?: string;
-  setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Skill = ({ icon, title, description, setSelectedPage }: Props) => {
+const Skill = ({ icon, title, description}: Props) => {
   return (
     <motion.div
       variants={childVariant}

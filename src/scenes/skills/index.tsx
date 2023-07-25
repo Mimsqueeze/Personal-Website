@@ -171,7 +171,6 @@ const Skills = ({ setSelectedPage }: Props) => {
                 icon={skill.icon}
                 title={skill.title}
                 description={skill.description}
-                setSelectedPage={setSelectedPage}
               />
             ))}
           </motion.div>
