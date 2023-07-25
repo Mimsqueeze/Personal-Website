@@ -122,13 +122,6 @@ const skills: Array<SkillType> = [
   },
 ];
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.2 },
-  },
-};
-
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
@@ -166,7 +159,6 @@ const Skills = ({ setSelectedPage }: Props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={container}
           >
             {skills.map((skill: SkillType) => (
               <Skill
