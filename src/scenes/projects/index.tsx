@@ -9,6 +9,14 @@ type Props = {
 const Projects = ({ setSelectedPage }: Props) => {
   const projectStyles = "mb-16 mt-16 md:w-4/5 bg-primary-300 p-10";
 
+  const headerSize = "text-4xl md:text-5xl";
+  const headerDescriptionSize = "text-base md:text-lg";
+
+  const projectHeaderSize = "text-2xl md:text-2xl";
+  const projectSubHeaderSize = "text-lg md:text-xl";
+  const projectDescriptionSize = "text-base md:text-base";
+
+
   return (
     <section id="projects" className="overflow-hidden bg-gray-20">
       <div className="mx-auto min-h-full w-5/6 pt-20">
@@ -27,14 +35,14 @@ const Projects = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <HText size="sm:text-6xl text-[11vw]">PROJECTS</HText>
-            <p className="text-lg sm:text-xl my-5">A list of projects I've done.</p>
+            <HText size={headerSize}>PROJECTS</HText>
+            <p className={`my-5 ${headerDescriptionSize}`}>A list of projects I've done.</p>
           </motion.div>
         </motion.div>
       </div>
       {/* DIGIT RECOGNIZER */}
       <motion.div
-        className={`${projectStyles} md:rounded-none md:rounded-r-2xl rounded-2xl w-5/6 md:mx-0 mx-auto`}
+        className={`${projectStyles} rounded-2xl w-5/6 mx-auto`}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
@@ -45,13 +53,13 @@ const Projects = ({ setSelectedPage }: Props) => {
         }}
       >
         <div className="pb-8">
-          <HText size="text-2xl md:text-4xl">Digit Recognizer</HText>
-          <p className="text-lg md:text-2xl text-primary-700">
+          <HText size={projectHeaderSize}>Digit Recognizer</HText>
+          <p className={`${projectSubHeaderSize} text-primary-700`}>
             An application that recognizes handwritten digits.
           </p>
         </div>
         <div className="items-center md:flex md:justify-between md:gap-10">
-          <p className="text-md md:text-xl basis-1/2 pb-8">
+          <p className={`${projectDescriptionSize} basis-1/2 pb-8`}>
             Developed a C++ implementation of a multi-layer convolutional neural
             network from scratch using Eigen3, a powerful linear algebra
             library. It utilizes deep learning techniques to recognize
@@ -72,7 +80,7 @@ const Projects = ({ setSelectedPage }: Props) => {
 
       {/* SORTING SIMULATOR */}
       <motion.div
-        className={`${projectStyles} md:rounded-none md:rounded-l-2xl rounded-2xl w-5/6 md:mx-0 mx-auto md:ml-[20%]`}
+        className={`${projectStyles} rounded-2xl w-5/6 mx-auto`}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
@@ -83,13 +91,13 @@ const Projects = ({ setSelectedPage }: Props) => {
         }}
       >
         <div className="pb-8">
-          <HText size="text-2xl md:text-4xl">Sorting Simulator</HText>
-          <p className="text-lg md:text-2xl text-primary-700">
+          <HText size={projectHeaderSize}>Sorting Simulator</HText>
+          <p className={`${projectSubHeaderSize} text-primary-700`}>
             A visualizer for different sorting algorithms.
           </p>
         </div>
         <div className="items-center md:flex md:justify-between md:gap-10">
-          <p className="text-md md:text-xl basis-1/2 pb-8">
+          <p className={`${projectDescriptionSize} basis-1/2 pb-8`}>
             Developed a sorting algorithm visualizer using Java Swing to
             showcase real-time updates to arrays as various sorting algorithms
             like bubble sort, insertion sort, merge sort, and quick sort are
@@ -103,7 +111,7 @@ const Projects = ({ setSelectedPage }: Props) => {
 
       {/* MIMS RUCOY CALCULATOR */}
       <motion.div
-        className={`${projectStyles} md:rounded-none md:rounded-r-2xl rounded-2xl md:w-4/5 w-5/6 md:mx-0 mx-auto`}
+        className={`${projectStyles} rounded-2xl w-5/6 mx-auto`}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
@@ -114,13 +122,13 @@ const Projects = ({ setSelectedPage }: Props) => {
         }}
       >
         <div className="pb-8">
-          <HText size="text-2xl md:text-4xl">Mims' Rucoy Calulator</HText>
-          <p className="text-lg md:text-2xl text-primary-700">
+          <HText size={projectHeaderSize}>Mims' Rucoy Calulator</HText>
+          <p className={`${projectSubHeaderSize} text-primary-700`}>
             A utility discord chatbot for an online gaming community.
           </p>
         </div>
         <div className="items-center md:flex md:justify-between md:gap-10">
-          <p className="text-md md:text-xl basis-1/2 pb-8">
+          <p className={`${projectDescriptionSize} basis-1/2 pb-8`}>
             Led a team that develops and hosts an intelligent utility Discord
             bot using Java Discord API, deployed in over 4600 servers, assisting
             thousands of users daily in optimizing their gameplay. Features
@@ -133,7 +141,7 @@ const Projects = ({ setSelectedPage }: Props) => {
 
       {/* RUCOY VISION BOT */}
       <motion.div
-        className={`${projectStyles} md:rounded-none md:rounded-l-2xl rounded-2xl md:w-4/5 w-5/6 md:mx-0 mx-auto md:ml-[20%]`}
+        className={`${projectStyles} rounded-2xl w-5/6 mx-auto`}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
@@ -144,13 +152,13 @@ const Projects = ({ setSelectedPage }: Props) => {
         }}
       >
         <div className="pb-8">
-          <HText size="text-2xl md:text-4xl">Rucoy Vision Bot</HText>
-          <p className="text-lg md:text-2xl text-primary-700">
+          <HText size={projectHeaderSize}>Rucoy Vision Bot</HText>
+          <p className={`${projectSubHeaderSize} text-primary-700`}>
             An automated game bot utilizing image recognition.
           </p>
         </div>
         <div className="items-center md:flex md:justify-between md:gap-10">
-          <p className="text-md md:text-xl basis-1/2 pb-8">
+          <p className={`${projectDescriptionSize} basis-1/2 pb-8`}>
             Developed an image processing and recognition application using
             OpenCV and PyAutoGUI, which captures screen images, identifies
             targets, and automates actions to improve a user's experience in a

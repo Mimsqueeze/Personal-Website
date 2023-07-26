@@ -126,6 +126,9 @@ type Props = {
 };
 
 const Skills = ({ setSelectedPage }: Props) => {
+  const headerSize = "text-4xl md:text-5xl";
+  const headerDescriptionSize = "text-base md:text-lg";
+
   return (
     <section id="skills" className="bg-primary-100 overflow-hidden">
       <div className="mx-auto min-h-full w-5/6 py-20">
@@ -144,8 +147,8 @@ const Skills = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <HText size="sm:text-6xl text-[11vw]">SKILLS</HText>
-            <p className="text-lg sm:text-xl my-5">
+            <HText size={headerSize}>SKILLS</HText>
+            <p className={`my-5 ${headerDescriptionSize}`}>
               A list of technologies I'm familiar with.
             </p>
           </motion.div>

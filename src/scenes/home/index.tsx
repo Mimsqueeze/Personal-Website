@@ -8,6 +8,9 @@ type Props = {
 };
 
 const Home = ({ setSelectedPage }: Props) => {
+  const headerSize = "text-4xl md:text-5xl";
+  const subHeaderSize = "text-xl md:text-2xl";
+  const headerDescriptionSize = "text-base md:text-lg";
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0 overflow-hidden">
       {/* IMAGE AND MAIN HEADER */}
@@ -29,11 +32,11 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0  },
             }}
           >
-            <Htext size="md:text-8xl text-[16vw]"><span className="whitespace-nowrap">MINSI HU</span></Htext>
+            <Htext size={headerSize}><span className="whitespace-nowrap">MINSI HU</span></Htext>
             <a
               href="https://umd.edu/"
               target="_blank"
-              className="basis-3/5 text-2xl md:text-3xl text-primary-500"
+              className={`basis-3/5 text-primary-500 ${subHeaderSize}`}
             >
               CS and Mathematics @ University of Maryland
             </a>
@@ -51,7 +54,7 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <p className="text-lg md:text-2xl mt-8">
+            <p className={`${headerDescriptionSize} mt-8`}>
               Hi! I'm Minsi Hu. I'm currently a rising sophomore attending the
               University of Maryland, pursuing a double degree in Math and
               Computer Science.
