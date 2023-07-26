@@ -22,7 +22,6 @@ import { BiLogoJava } from "react-icons/bi";
 
 import { motion } from "framer-motion";
 import Skill from "./Skill";
-import useMediaQuery from "@/hooks/useMediaQuery";
 
 const iconStyle = "h-6 w-6 text-primary-500";
 const skills: Array<SkillType> = [
