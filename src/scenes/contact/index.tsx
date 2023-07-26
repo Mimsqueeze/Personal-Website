@@ -30,7 +30,7 @@ const Contact = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="contact" className="bg-white overflow-hidden">
-      <div className="mx-auto min-h-full w-5/6 py-20">
+      <div className="mx-auto min-h-full w-5/6 py-10 md:py-20">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}
         >

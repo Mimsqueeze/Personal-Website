@@ -7,11 +7,11 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 const projects: Array<ProjectType> = [
-  { // Digit Recognizer
+  {
+    // Digit Recognizer
     projectHeader: "Digit Recognizer",
     projectSubHeader: "An application that recognizes handwritten digits.",
-    projectDescription: 
-    `
+    projectDescription: `
       Developed a C++ implementation of a multi-layer convolutional neural
       network from scratch using Eigen3, a powerful linear algebra
       library. It utilizes deep learning techniques to recognize
@@ -26,13 +26,13 @@ const projects: Array<ProjectType> = [
       database. The program takes inputs 28x28 pixel images of a
       handwritten digit and predicts the corresponding numerical value.
     `,
-    projectImage: "digit_recognizer.png"
+    projectImage: "digit_recognizer.png",
   },
-  { // SORTING SIMULATOR
+  {
+    // SORTING SIMULATOR
     projectHeader: "Sorting Simulator",
     projectSubHeader: "A visualizer for different sorting algorithms.",
-    projectDescription: 
-    `
+    projectDescription: `
     Developed a sorting algorithm visualizer using Java Swing to
     showcase real-time updates to arrays as various sorting algorithms
     like bubble sort, insertion sort, merge sort, and quick sort are
@@ -40,32 +40,33 @@ const projects: Array<ProjectType> = [
     comparisons by providing relevant statistics including sorting time,
     number of comparisons, number of insertions, etc.
     `,
-    projectImage: "digit_recognizer.png"
+    projectImage: "digit_recognizer.png",
   },
-  { // Mims' Rucoy Calulator
+  {
+    // Mims' Rucoy Calulator
     projectHeader: "Mims' Rucoy Calulator",
-    projectSubHeader: "A utility discord chatbot for an online gaming community.",
-    projectDescription: 
-    `
+    projectSubHeader:
+      "A utility discord chatbot for an online gaming community.",
+    projectDescription: `
     Led a team that develops and hosts an intelligent utility Discord
     bot using Java Discord API, deployed in over 4600 servers, assisting
     thousands of users daily in optimizing their gameplay. Features
     intuitive commands, intelligent functionality, and a clean yet
     informative UI.
     `,
-    projectImage: "digit_recognizer.png"
+    projectImage: "digit_recognizer.png",
   },
-  { // Rucoy Vision Bot
+  {
+    // Rucoy Vision Bot
     projectHeader: "Rucoy Vision Bot",
     projectSubHeader: "An automated game bot utilizing image recognition.",
-    projectDescription: 
-    `
+    projectDescription: `
     Developed an image processing and recognition application using
     OpenCV and PyAutoGUI, which captures screen images, identifies
     targets, and automates actions to improve a user's experience in a
     multiplayer game.
     `,
-    projectImage: "digit_recognizer.png"
+    projectImage: "digit_recognizer.png",
   },
 ];
 
@@ -75,7 +76,7 @@ const Projects = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="projects" className="overflow-hidden bg-gray-20">
-      <div className="mx-auto min-h-full w-5/6 pt-20">
+      <div className="mx-auto min-h-full w-5/6 py-20">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.Projects)}
         >
@@ -96,18 +97,19 @@ const Projects = ({ setSelectedPage }: Props) => {
               A list of projects I've done.
             </p>
           </motion.div>
+          {/* PROJECTS */}
+          <div className="md:mx-auto md:grid md:grid-cols-2 md:gap-8">
+            {projects.map((project: ProjectType) => (
+              <Project
+                key={project.projectHeader}
+                projectHeader={project.projectHeader}
+                projectSubHeader={project.projectSubHeader}
+                projectDescription={project.projectDescription}
+                projectImage={project.projectImage}
+              />
+            ))}
+          </div>
         </motion.div>
-      </div>
-      {/* PROJECTS */}
-      <div className="md:grid md:grid-cols-2 md:w-5/6 md:mx-auto md:gap-8">
-        {projects.map((project: ProjectType) => (
-          <Project
-            projectHeader = {project.projectHeader}
-            projectSubHeader = {project.projectSubHeader}
-            projectDescription = {project.projectDescription}
-            projectImage = {project.projectImage}
-          />
-        ))}
       </div>
     </section>
   );
