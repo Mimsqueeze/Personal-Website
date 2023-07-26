@@ -11,8 +11,9 @@ export interface SkillType {
   description?: string;
 }
 
-export interface ClassType {
-  name: string;
-  description?: string;
-  image: string;
+export interface ProjectType {
+  projectHeader: string;
+  projectSubHeader: string;
+  projectDescription: string;
+  projectImage: string;
 }
