@@ -27,6 +27,7 @@ const projects: Array<ProjectType> = [
       handwritten digit and predicts the corresponding numerical value.
     `,
     projectImage: "digit_recognizer.png",
+    projectLink: "https://github.com/Mimsqueeze/Digit-Recognition",
   },
   {
     // SORTING SIMULATOR
@@ -41,6 +42,7 @@ const projects: Array<ProjectType> = [
     number of comparisons, number of insertions, etc.
     `,
     projectImage: "sorting_simulator.png",
+    projectLink: "https://github.com/Mimsqueeze/Sorting-Simulator",
   },
   {
     // Mims' Rucoy Calculator
@@ -55,6 +57,7 @@ const projects: Array<ProjectType> = [
     informative UI.
     `,
     projectImage: "mims_rucoy_calculator.png",
+    projectLink: "https://github.com/Mimsqueeze/Mims-Rucoy-Calculator",
   },
   {
     // Rucoy Vision Bot
@@ -67,6 +70,7 @@ const projects: Array<ProjectType> = [
     multiplayer game.
     `,
     projectImage: "rucoy_vision_bot.png",
+    projectLink: "https://github.com/Mimsqueeze/Rucoy-Vision-Bot",
   },
 ];
 
@@ -106,6 +110,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                 projectSubHeader={project.projectSubHeader}
                 projectDescription={project.projectDescription}
                 projectImage={project.projectImage}
+                projectLink={project.projectLink}
               />
             ))}
           </div>

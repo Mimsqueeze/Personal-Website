@@ -1,5 +1,5 @@
 import Logo from "/icon.svg";
-import GithubLogo from "/github_logo.png";
+import { SiGithub } from "react-icons/si"
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
@@ -61,7 +61,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
           <div className="p-2">
             <a href="https://github.com/Mimsqueeze" target="_blank" className={`${flexBetween} whitespace-nowrap w-full gap-1 transition duration-500 hover:text-primary-300`}>
-              <img src={GithubLogo} alt="github logo" className="w-[30px] rounded-full"></img> Github | Visit →
+            <SiGithub className="h-8 w-8"/> Github | Visit →
             </a>
           </div>
           

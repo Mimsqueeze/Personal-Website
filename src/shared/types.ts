@@ -16,4 +16,5 @@ export interface ProjectType {
   projectSubHeader: string;
   projectDescription: string;
   projectImage: string;
+  projectLink: string;
 }
