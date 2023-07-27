@@ -40,11 +40,11 @@ const projects: Array<ProjectType> = [
     comparisons by providing relevant statistics including sorting time,
     number of comparisons, number of insertions, etc.
     `,
-    projectImage: "digit_recognizer.png",
+    projectImage: "sorting_simulator.png",
   },
   {
-    // Mims' Rucoy Calulator
-    projectHeader: "Mims' Rucoy Calulator",
+    // Mims' Rucoy Calculator
+    projectHeader: "Mims' Rucoy Calculator",
     projectSubHeader:
       "A utility discord chatbot for an online gaming community.",
     projectDescription: `
@@ -54,7 +54,7 @@ const projects: Array<ProjectType> = [
     intuitive commands, intelligent functionality, and a clean yet
     informative UI.
     `,
-    projectImage: "digit_recognizer.png",
+    projectImage: "mims_rucoy_calculator.png",
   },
   {
     // Rucoy Vision Bot
@@ -66,7 +66,7 @@ const projects: Array<ProjectType> = [
     targets, and automates actions to improve a user's experience in a
     multiplayer game.
     `,
-    projectImage: "digit_recognizer.png",
+    projectImage: "rucoy_vision_bot.png",
   },
 ];
 
