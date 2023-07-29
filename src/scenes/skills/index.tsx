@@ -155,7 +155,7 @@ const Skills = ({ setSelectedPage }: Props) => {
 
           {/* SKILLS */}
           <motion.div
-            className="mt-5 items-center justify-between gap-8 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3"
+            className="mt-5 items-center justify-between gap-8 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
