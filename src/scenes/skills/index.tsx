@@ -117,7 +117,7 @@ const skills: Array<SkillType> = [
     icon: <SiLinux className={iconStyle} />,
     title: "Linux OS",
     description:
-      "Proficient in ultilizing Linux OS for developing applications.",
+      "Proficient in utilizing Linux OS for developing applications.",
   },
 ];
 
