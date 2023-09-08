@@ -1,7 +1,6 @@
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 import parse from "html-react-parser";
-import { SiGithub } from "react-icons/si"
 
 type Props = {
   projectHeader: string;
@@ -11,7 +10,7 @@ type Props = {
   projectLink: string;
 };
 
-const Project = ({
+const Activity = ({
   projectHeader,
   projectSubHeader,
   projectDescription,
@@ -20,9 +19,9 @@ const Project = ({
 }: Props) => {
   const projectStyles =
     "mt-16 md:my-0 mx-auto bg-primary-300 p-10 rounded-2xl";
-  const projectHeaderSize = "text-2xl md:text-2xl";
-  const projectSubHeaderSize = "text-lg md:text-xl";
-  const projectDescriptionSize = "text-base md:text-base";
+  const projectHeaderSize = "text-4xl md:text-3xl";
+  const projectSubHeaderSize = "text-lg md:text-2xl";
+  const projectDescriptionSize = "text-base";
   const parsedProjectDescription = parse(projectDescription);
   return (
     <motion.div
@@ -37,14 +36,7 @@ const Project = ({
       }}
     >
       <div className="pb-8">
-        <div className="flex justify-between">
-          <HText size={projectHeaderSize}>{projectHeader}</HText>
-          <div className="p-2 pt-0 inline-block align-top">
-            <a href={projectLink} target="_blank" className={`flex items-center justify-between whitespace-nowrap w-full gap-1 transition duration-500 hover:text-primary-700`}>
-              <SiGithub className="h-6 w-6"/> Visit →
-            </a>
-          </div>
-        </div>
+        <HText size={projectHeaderSize}>{projectHeader}</HText>
         <p className={`${projectSubHeaderSize} text-primary-700`}>
           {projectSubHeader}
         </p>
@@ -63,4 +55,4 @@ const Project = ({
   );
 };
 
-export default Project;
+export default Activity;

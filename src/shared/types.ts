@@ -3,6 +3,7 @@ export enum SelectedPage {
   Skills = "skills",
   Projects = "projects",
   Contact = "contact",
+  Activities = "activities"
 }
 
 export interface SkillType {
@@ -17,4 +18,12 @@ export interface ProjectType {
   projectDescription: string;
   projectImage: string;
   projectLink: string;
+}
+
+export interface ActivityType {
+  activityHeader: string;
+  activitySubHeader: string;
+  activityDescription: string;
+  activityImage: string;
+  activityLink: string;
 }
