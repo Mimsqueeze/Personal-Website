@@ -29,49 +29,49 @@ const skills: Array<SkillType> = [
     icon: <BiLogoJava className={iconStyle} />,
     title: "Java",
     description:
-    "Highly proficient at using Java to develop a variety of practical applications including UIs, chatbots, and more.",
+    "Proficient at using Java to develop a variety of practical applications including UIs, chatbots, and more.",
   },
   {
     icon: <SiC className={iconStyle} />,
     title: "C",
     description:
-    "Highly proficient at using C to develop efficient low-level softwares including command-line utilities and more.",
+    "Skilled at using C to develop efficient low-level softwares including command-line utilities and more.",
   },
   {
     icon: <SiCplusplus className={iconStyle} />,
     title: "C++",
     description:
-    "Highly proficient in utilizing C++ for competitive programming and developing applications, including neural networks.",
+    "Proficient in utilizing C++ for competitive programming and developing applications, including neural networks.",
   },
   {
     icon: <SiPython className={iconStyle} />,
     title: "Python",
     description:
-    "Highly skilled in crafting Python scripts for a diverse applications, including machine learning, web scraping, and image recognition tasks.",
+    "Skilled in crafting Python scripts for a diverse applications, including machine learning, web scraping, and image recognition tasks.",
   },
   {
     icon: <SiJavascript className={iconStyle} />,
     title: "Javascript",
     description:
-    "Highly proficient at using Javascript for front-end and back-end web development.",
+    "Capable of using Javascript for front-end and back-end web development.",
   },
   {
     icon: <SiTypescript className={iconStyle} />,
     title: "Typescript",
     description:
-      "Highly proficient in utilizing Typescript to craft cleaner, safer, and more scalable code for web development.",
+    "Competent in utilizing Typescript to craft cleaner, safer, and more scalable code for web development.",
   },
   {
     icon: <SiHtml5 className={iconStyle} />,
     title: "HTML",
     description:
-    "Highly proficient in HTML for clean web page and UI development.",
+    "Proficient in HTML for clean web page and UI development.",
   },
   {
     icon: <SiCss3 className={iconStyle} />,
     title: "CSS",
     description:
-    "Highly proficient in CSS styling to craft visually appealing and responsive UIs",
+    "Able in CSS styling to craft visually appealing and responsive UIs",
   },
   {
     icon: <SiCsharp className={iconStyle} />,
@@ -79,45 +79,45 @@ const skills: Array<SkillType> = [
     description: "Experience in using C# to develop game scripts in the Unity environment.",
   },
   {
+    icon: <SiNodedotjs className={iconStyle} />,
+    title: "Node",
+    description: "Able to build backend services such as REST APIs using Node.",
+  },
+  {
     icon: <SiReact className={iconStyle} />,
     title: "React",
     description:
-      "Extensive experience developing web applications using React.",
-  },
-  {
-    icon: <SiNodedotjs className={iconStyle} />,
-    title: "Node",
-    description: "Vast experience building backend services such as REST APIs using Node.",
+    "Practiced in developing web applications using React.",
   },
   {
     icon: <SiExpress className={iconStyle} />,
     title: "Express",
     description:
-      "Proficient in using Express to develop web applications, REST APIs, and manage routing.",
+    "Proficient in using Express to develop web applications, REST APIs, and manage routing.",
   },
   {
     icon: <SiMongodb className={iconStyle} />,
     title: "MongoDB",
     description:
-      "Experience in development and administration of MongoDB NoSQL databases.",
+    "Experience in development and administration of MongoDB NoSQL databases.",
   },
   {
     icon: <SiVite className={iconStyle} />,
     title: "Vite",
     description:
-      "Experienced in using the Vite build tool to develop web applications.",
+    "Able in using the Vite build tool to develop web applications.",
   },
   {
     icon: <SiTailwindcss className={iconStyle} />,
     title: "Tailwind CSS",
     description:
-    "Highly proficient in using Tailwind CSS framework to streamline and accelerate the web application development process.",
+    "Proficient in using Tailwind CSS framework to streamline and accelerate the web application development process.",
   },
   {
     icon: <SiLinux className={iconStyle} />,
     title: "Linux OS",
     description:
-      "Proficient in utilizing Linux OS for developing applications.",
+    "Proficient in utilizing Linux OS for developing applications.",
   },
 ];
 

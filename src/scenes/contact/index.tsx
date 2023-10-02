@@ -158,7 +158,7 @@ const Contact = ({ setSelectedPage }: Props) => {
               <p className="text-xl font-bold text-gray-600">Experience</p>
               <ul className="pl-5">
                 <li className="pb-2">Teaching Assistant, UMD Department of Computer Science: <i>August 2023</i> - <i>December 2023</i></li>
-                <p className="pl-5 text-gray-600">Teaching Assistant for the CMSC216: Introduction to Computer Systems fall semester course...</p>
+                <p className="pl-5 text-gray-600">Teaching Assistant for the CMSC216: Introduction to Computer Systems and STAT410: Introduction to Probability Theory fall semester course...</p>
               </ul>
 
               {/* DOWNLOAD RESUME BUTTON */}
