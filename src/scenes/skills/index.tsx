@@ -16,6 +16,8 @@ import {
   SiTailwindcss,
   SiPython,
   SiCsharp,
+  SiOcaml,
+  SiRust,
 } from "react-icons/si";
 
 import { BiLogoJava } from "react-icons/bi";
@@ -41,13 +43,25 @@ const skills: Array<SkillType> = [
     icon: <SiCplusplus className={iconStyle} />,
     title: "C++",
     description:
-    "Proficient in utilizing C++ for competitive programming and developing applications, including neural networks.",
+    "Proficient in utilizing C++ for competitive programming and developing applications.",
   },
   {
     icon: <SiPython className={iconStyle} />,
     title: "Python",
     description:
-    "Skilled in crafting Python scripts for a diverse applications, including machine learning, web scraping, and image recognition tasks.",
+    "Skilled in crafting Python scripts for a diverse applications, including data science, machine learning, web scraping, and image recognition tasks.",
+  },
+  {
+    icon: <SiOcaml className={iconStyle} />,
+    title: "OCaml",
+    description:
+    "Proficient in OCaml functional programming to create elegant applications.",
+  },
+  {
+    icon: <SiRust className={iconStyle} />,
+    title: "Rust",
+    description:
+    "Proficient in Rust programming to craft safe, clean, and efficient applications.",
   },
   {
     icon: <SiJavascript className={iconStyle} />,
