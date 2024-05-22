@@ -1,13 +1,9 @@
 import HText from "@/shared/HText";
 import { SelectedPage, SkillType } from "@/shared/types";
 import {
-  SiExpress,
   SiLinux,
-  SiMongodb,
-  SiNodedotjs,
   SiReact,
   SiTypescript,
-  SiVite,
   SiJavascript,
   SiCplusplus,
   SiC,
