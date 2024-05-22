@@ -151,14 +151,14 @@ const Contact = ({ setSelectedPage }: Props) => {
               <h4 className="text-2xl font-bold pb-4">Minsi Hu</h4>
               <p className="text-xl font-bold text-gray-600">Skills</p>
               <ul className="pl-5 pb-5">
+                <li>Python</li>
                 <li>Java</li>
                 <li>C/C++</li>
-                <li>Javascript</li>
               </ul>
               <p className="text-xl font-bold text-gray-600">Experience</p>
               <ul className="pl-5">
-                <li className="pb-2">Teaching Assistant, UMD Department of Computer Science: <i>August 2023</i> - <i>December 2023</i></li>
-                <p className="pl-5 text-gray-600">Teaching Assistant for the CMSC216: Introduction to Computer Systems and STAT410: Introduction to Probability Theory fall semester course...</p>
+                <li className="pb-2">Teaching Assistant, UMD Department of Computer Science: <i>August 2023</i> - <i>Present</i></li>
+                <p className="pl-5 text-gray-600">Teaching Assistant for the CMSC216: Introduction to Computer Systems and STAT410: Introduction to Probability Theory courses...</p>
               </ul>
 
               {/* DOWNLOAD RESUME BUTTON */}

@@ -30,19 +30,53 @@ const projects: Array<ProjectType> = [
     projectLink: "https://github.com/Mimsqueeze/Digit-Recognition",
   },
   {
+    // EmotionAI
+    projectHeader: "Emotion AI",
+    projectSubHeader: "A real-time facial sentiment analysis chatbot.",
+    projectDescription: `
+    Engineered a real-time facial sentiment analysis and chatbot application 
+    using OpenCV, TensorFlow, OpenAI API, and React + TypeScript to recognize 
+    facial expressions in real-time with a custom-trained CNN, and curate 
+    personalized responses based on detected emotions. Uses the
+    <a
+      href="https://paperswithcode.com/dataset/affectnet"
+      target="_blank"
+      className="text-primary-700"
+    >
+      AffectNet
+    </a>
+
+    dataset, a large facial expression dataset, as training data.
+    `,
+    projectImage: "emotion_ai.png",
+    projectLink: "https://github.com/Mimsqueeze/Emotion-AI",
+  },
+  {
     // SORTING SIMULATOR
     projectHeader: "Sorting Simulator",
     projectSubHeader: "A visualizer for different sorting algorithms.",
     projectDescription: `
     Developed a sorting algorithm visualizer using Java Swing to
     showcase real-time updates to arrays as various sorting algorithms
-    like bubble sort, insertion sort, merge sort, and quick sort are
-    applied. Sorting Simulator also allows sorting algorithms
-    comparisons by providing relevant statistics including sorting time,
-    number of comparisons, number of insertions, etc.
+    like insertion sort, quick sort, and intro sort are
+    applied. Sorting Simulator also allows for algorithm evaluation by 
+    tracking relevant metrics including sorting time, comparisons count, 
+    insertion count, etc.
     `,
     projectImage: "sorting_simulator.png",
     projectLink: "https://github.com/Mimsqueeze/Sorting-Simulator",
+  },
+  {
+    // Rucoy Vision Bot
+    projectHeader: "Rucoy Vision Bot",
+    projectSubHeader: "An automated game bot utilizing image recognition.",
+    projectDescription: `
+    Developed a realtime image recognition application using
+    OpenCV and PyAutoGUI, which identifies targets and automates actions 
+    to improve a user's experience in a multiplayer game.
+    `,
+    projectImage: "rucoy_vision_bot.png",
+    projectLink: "https://github.com/Mimsqueeze/Rucoy-Vision-Bot",
   },
   {
     // Mims' Rucoy Calculator
@@ -51,26 +85,13 @@ const projects: Array<ProjectType> = [
       "A utility discord chatbot for an online gaming community.",
     projectDescription: `
     Led a team that develops and hosts an intelligent utility Discord
-    bot using Java Discord API, deployed in over 4600 servers, assisting
+    bot using Java Discord API, deployed in over 4800 servers, assisting
     thousands of users daily in optimizing their gameplay. Features
     intuitive commands, intelligent functionality, and a clean yet
     informative UI.
     `,
     projectImage: "mims_rucoy_calculator.png",
     projectLink: "https://github.com/Mimsqueeze/Mims-Rucoy-Calculator",
-  },
-  {
-    // Rucoy Vision Bot
-    projectHeader: "Rucoy Vision Bot",
-    projectSubHeader: "An automated game bot utilizing image recognition.",
-    projectDescription: `
-    Developed an image processing and recognition application using
-    OpenCV and PyAutoGUI, which captures screen images, identifies
-    targets, and automates actions to improve a user's experience in a
-    multiplayer game.
-    `,
-    projectImage: "rucoy_vision_bot.png",
-    projectLink: "https://github.com/Mimsqueeze/Rucoy-Vision-Bot",
   },
 ];
 
@@ -98,7 +119,7 @@ const Projects = ({ setSelectedPage }: Props) => {
           >
             <HText size={headerSize}>PROJECTS</HText>
             <p className={`my-5 ${headerDescriptionSize}`}>
-              A list of projects I've done.
+              A list of personal projects I've done!
             </p>
           </motion.div>
           {/* PROJECTS */}

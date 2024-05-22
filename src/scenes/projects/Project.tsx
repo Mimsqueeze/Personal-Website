@@ -20,7 +20,7 @@ const Skill = ({
 }: Props) => {
   const projectStyles =
     "mt-16 md:my-0 mx-auto bg-primary-300 p-10 rounded-2xl";
-  const projectHeaderSize = "text-2xl md:text-2xl";
+  const projectHeaderSize = "text-2xl md:text-2xl pb-2";
   const projectSubHeaderSize = "text-lg md:text-xl";
   const projectDescriptionSize = "text-base md:text-base";
   const parsedProjectDescription = parse(projectDescription);

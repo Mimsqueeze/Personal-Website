@@ -18,6 +18,10 @@ import {
   SiCsharp,
   SiOcaml,
   SiRust,
+  SiTensorflow,
+  SiR,
+  SiPandas,
+  SiOpencv,
 } from "react-icons/si";
 
 import { BiLogoJava } from "react-icons/bi";
@@ -31,7 +35,7 @@ const skills: Array<SkillType> = [
     icon: <BiLogoJava className={iconStyle} />,
     title: "Java",
     description:
-    "Proficient at using Java to develop a variety of practical applications including UIs, chatbots, and more.",
+    "Proficient at developing practical applications including graphics, UIs, and chatbots with Java.",
   },
   {
     icon: <SiC className={iconStyle} />,
@@ -43,19 +47,19 @@ const skills: Array<SkillType> = [
     icon: <SiCplusplus className={iconStyle} />,
     title: "C++",
     description:
-    "Proficient in utilizing C++ for competitive programming and developing applications.",
+    "Proficient in utilizing C++ for competitive programming and developing efficient applications from scratch.",
   },
   {
     icon: <SiPython className={iconStyle} />,
     title: "Python",
     description:
-    "Skilled in crafting Python scripts for a diverse applications, including data science, machine learning, web scraping, and image recognition tasks.",
+    "Skilled in levereging Python for data science, machine learning, web scraping, and image recognition tasks.",
   },
   {
     icon: <SiOcaml className={iconStyle} />,
     title: "OCaml",
     description:
-    "Proficient in OCaml functional programming to create elegant applications.",
+    "Proficient in OCaml functional programming to craft intuitive and elegant applications.",
   },
   {
     icon: <SiRust className={iconStyle} />,
@@ -67,19 +71,19 @@ const skills: Array<SkillType> = [
     icon: <SiJavascript className={iconStyle} />,
     title: "Javascript",
     description:
-    "Capable of using Javascript for front-end and back-end web development.",
+    "Skilled in effectively using Javascript for front-end and back-end web development.",
   },
   {
     icon: <SiTypescript className={iconStyle} />,
     title: "Typescript",
     description:
-    "Competent in utilizing Typescript to craft cleaner, safer, and more scalable code for web development.",
+    "Experienced in utilizing Typescript to craft cleaner and safer code for web development.",
   },
   {
     icon: <SiHtml5 className={iconStyle} />,
     title: "HTML",
     description:
-    "Proficient in HTML for clean web page and UI development.",
+    "Proficient in writing HTML for clean web pages and UIs.",
   },
   {
     icon: <SiCss3 className={iconStyle} />,
@@ -90,48 +94,49 @@ const skills: Array<SkillType> = [
   {
     icon: <SiCsharp className={iconStyle} />,
     title: "C#",
-    description: "Experience in using C# to develop game scripts in the Unity environment.",
+    description: "Experienced in using C# to develop game scripts in the Unity environment.",
   },
   {
-    icon: <SiNodedotjs className={iconStyle} />,
-    title: "Node",
-    description: "Able to build backend services such as REST APIs using Node.",
+    icon: <SiR className={iconStyle} />,
+    title: "R",
+    description:
+    "Experienced in using R for statistical computing and modeling.",
+  },
+  {
+    icon: <SiTensorflow className={iconStyle} />,
+    title: "TensorFlow",
+    description:
+    "Versed in using Tensorflow to craft deep neural networks for machine learning applications.",
+  },
+  {
+    icon: <SiPandas className={iconStyle} />,
+    title: "Pandas",
+    description:
+    "Experienced in using Pandas for data processing and manipulation for machine learnig applications.",
+  },
+  {
+    icon: <SiOpencv className={iconStyle} />,
+    title: "OpenCV",
+    description:
+    "Well-versed in utilizing OpenCV's image processing and recognition capabilities for machine learning applications.",
   },
   {
     icon: <SiReact className={iconStyle} />,
     title: "React",
     description:
-    "Practiced in developing web applications using React.",
-  },
-  {
-    icon: <SiExpress className={iconStyle} />,
-    title: "Express",
-    description:
-    "Proficient in using Express to develop web applications, REST APIs, and manage routing.",
-  },
-  {
-    icon: <SiMongodb className={iconStyle} />,
-    title: "MongoDB",
-    description:
-    "Experience in development and administration of MongoDB NoSQL databases.",
-  },
-  {
-    icon: <SiVite className={iconStyle} />,
-    title: "Vite",
-    description:
-    "Able in using the Vite build tool to develop web applications.",
+    "Practiced in crafting elegant, modular web applications with React.",
   },
   {
     icon: <SiTailwindcss className={iconStyle} />,
     title: "Tailwind CSS",
     description:
-    "Proficient in using Tailwind CSS framework to streamline and accelerate the web application development process.",
+    "Proficient in using Tailwind CSS to craft simple yet elegant web applications.",
   },
   {
     icon: <SiLinux className={iconStyle} />,
     title: "Linux OS",
     description:
-    "Proficient in utilizing Linux OS for developing applications.",
+    "Proficient in utilizing the Linux OS for developing applications.",
   },
 ];
 
