@@ -82,7 +82,7 @@ const Experiences = ({ setSelectedPage }: Props) => {
           >
             <HText size={headerSize}>EXPERIENCES</HText>
             <p className={`my-5 ${headerDescriptionSize}`}>
-              A list of personal and professional experiences I've had!
+              A list of my personal and professional experiences.
             </p>
           </motion.div>
           {/* EXPERIENCES */}
