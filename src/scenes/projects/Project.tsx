@@ -11,7 +11,7 @@ type Props = {
   projectLink: string;
 };
 
-const Skill = ({
+const Project = ({
   projectHeader,
   projectSubHeader,
   projectDescription,
@@ -21,8 +21,8 @@ const Skill = ({
   const projectStyles =
     "mt-16 md:my-0 mx-auto bg-primary-300 p-10 rounded-2xl";
   const projectHeaderSize = "text-2xl md:text-2xl pb-2";
-  const projectSubHeaderSize = "text-lg md:text-xl";
-  const projectDescriptionSize = "text-base md:text-base";
+  const projectSubHeaderSize = "text-lg md:text-xl pb-4";
+  const projectDescriptionSize = "text-base md:text-base pb-4";
   const parsedProjectDescription = parse(projectDescription);
   return (
     <motion.div
@@ -36,21 +36,19 @@ const Skill = ({
         visible: { opacity: 1, x: 0 },
       }}
     >
-      <div className="pb-8">
-        <div className="flex justify-between">
-          <HText size={projectHeaderSize}>{projectHeader}</HText>
-          <div className="p-2 pt-0 inline-block align-top">
-            <a href={projectLink} target="_blank" className={`flex items-center justify-between whitespace-nowrap w-full gap-1 transition duration-500 hover:text-primary-700`}>
-              <SiGithub className="h-6 w-6"/> Visit →
-            </a>
-          </div>
+      <div className="flex justify-between">
+        <HText size={projectHeaderSize}>{projectHeader}</HText>
+        <div className="p-2 pt-0 inline-block align-top">
+          <a href={projectLink} target="_blank" className={`flex items-center justify-between whitespace-nowrap w-full gap-1 transition duration-500 hover:text-primary-700`}>
+            <SiGithub className="h-6 w-6"/> Visit →
+          </a>
         </div>
-        <p className={`${projectSubHeaderSize} text-primary-700`}>
-          {projectSubHeader}
-        </p>
       </div>
+      <p className={`${projectSubHeaderSize} text-primary-700`}>
+        {projectSubHeader}
+      </p>
       <div className="items-center">
-        <p className={`${projectDescriptionSize} pb-8`}>
+        <p className={`${projectDescriptionSize}`}>
           {parsedProjectDescription}
         </p>
         <img
@@ -63,4 +61,4 @@ const Skill = ({
   );
 };
 
-export default Skill;
+export default Project;
