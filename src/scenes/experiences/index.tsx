@@ -56,6 +56,40 @@ const experiences: Array<ExperienceType> = [
     experienceImage: "department_of_cs_logo.png",
     experienceImage2: "university-of-maryland-logo.png",
   },
+  {
+    // Gamer Symphony Orchestra
+    experienceHeader: "Webmaster and Violinist",
+    experienceSubHeader: `
+      <a
+        href="https://umd.gamersymphony.org/"
+        target="_blank"
+        className="text-primary-700 underline"
+      >
+      The Gamer Symphony Orchestra at UMD
+      </a>
+    `,
+    experienceDescription: `
+      Webmaster and violin performer for the Gamer Symphony Orchestra at UMD 
+      (GSO), a student-run ensemble performing orchestral arrangements of 
+      video game music. As Webmaster, I update the GSO 
+      <a
+      href="https://umd.gamersymphony.org/"
+      target="_blank"
+      className="text-primary-700 underline"
+      >
+      webpage</a> regularly, facilitate access to sheet music for members, and 
+      maintain our music library for future reference. As a violinist, I LOVE 
+      performing for the GSO and can say it's an absolute blast. Photo credits to
+      <a
+      href="https://galleries.kenrubinphotography.com/gamersymphonyorchestra/"
+      target="_blank"
+      className="text-primary-700 underline"
+      >
+      @Ken Rubin Photography</a>.
+    `,
+    experienceImage: "gamer-symphony-orchestra-cover.jpg",
+    experienceImage2: "",
+  },
 ];
 
 const Experiences = ({ setSelectedPage }: Props) => {
@@ -82,7 +116,7 @@ const Experiences = ({ setSelectedPage }: Props) => {
           >
             <HText size={headerSize}>EXPERIENCES</HText>
             <p className={`my-5 ${headerDescriptionSize}`}>
-              A list of my personal and professional experiences.
+              A couple of my personal and professional experiences.
             </p>
           </motion.div>
           {/* EXPERIENCES */}

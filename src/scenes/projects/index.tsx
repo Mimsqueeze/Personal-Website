@@ -119,7 +119,7 @@ const Projects = ({ setSelectedPage }: Props) => {
           >
             <HText size={headerSize}>PROJECTS</HText>
             <p className={`my-5 ${headerDescriptionSize}`}>
-              A list of personal projects I've done!
+              Some of my personal projects I've done!
             </p>
           </motion.div>
           {/* PROJECTS */}

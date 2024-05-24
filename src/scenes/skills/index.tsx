@@ -164,7 +164,7 @@ const Skills = ({ setSelectedPage }: Props) => {
           >
             <HText size={headerSize}>SKILLS</HText>
             <p className={`my-5 ${headerDescriptionSize}`}>
-              A list of technologies I'm familiar with.
+              Some technologies I'm familiar with.
             </p>
           </motion.div>
 
