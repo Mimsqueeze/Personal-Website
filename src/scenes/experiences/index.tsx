@@ -47,11 +47,11 @@ const experiences: Array<ExperienceType> = [
     experienceDescription: `
       Teaching Assistant for the 
       CMSC132: Object-Oriented Programming II, 
-      CMSC216: Introduction to Computer Systems, and 
+      CMSC216: Introduction to Computer Systems, 
+      CMSC330: Organization of Programming Languages, and 
       STAT410: Introduction to Probability Theory courses. 
-      Dedicated to promoting the success of undergraduate students 
-      by teaching discussion sections, assisting students in office hours, 
-      and providing vital feedback on projects and exams.
+      Taught discussion sections, held office hours, and 
+      designed coursework for over 2100 students.
     `,
     experienceImage: "department_of_cs_logo.png",
     experienceImage2: "university-of-maryland-logo.png",

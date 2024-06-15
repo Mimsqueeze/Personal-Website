@@ -18,6 +18,7 @@ import {
   SiR,
   SiPandas,
   SiOpencv,
+  SiNvidia,
 } from "react-icons/si";
 
 import { BiLogoJava } from "react-icons/bi";
@@ -97,6 +98,12 @@ const skills: Array<SkillType> = [
     title: "R",
     description:
     "Experienced in using R for statistical computing and modeling.",
+  },
+  {
+    icon: <SiNvidia className={iconStyle} />,
+    title: "CUDA",
+    description:
+    "Exceptional in CUDA programming to create GPU-accelerated applications.",
   },
   {
     icon: <SiTensorflow className={iconStyle} />,

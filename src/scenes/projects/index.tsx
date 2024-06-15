@@ -8,26 +8,21 @@ type Props = {
 };
 const projects: Array<ProjectType> = [
   {
-    // Digit Recognizer
-    projectHeader: "Digit Recognizer",
-    projectSubHeader: "An application that recognizes handwritten digits.",
+    // Mims' Rucoy Calculator
+    projectHeader: "DeepCore",
+    projectSubHeader:
+      "A fast C++ neural network library in CUDA",
     projectDescription: `
-      Developed a C++ implementation of a multi-layer convolutional neural
-      network from scratch using Eigen3, a powerful linear algebra
-      library. It utilizes deep learning techniques to recognize
-      handwritten digits given from the
-      <a
-        href="http://yann.lecun.com/exdb/mnist/index.html"
-        target="_blank"
-        className="text-primary-700"
-      >
-        MNIST
-      </a>
-      database. The program takes inputs 28x28 pixel images of a
-      handwritten digit and predicts the corresponding numerical value.
+      Engineered a C++ neural network library from scratch, leveraging NVIDIA's
+      CUDA platform to accelerate tensor operations with GPU parallel computing.
+      Implemented to aid in understanding the mathematics behind 
+      neural networks, implementing concepts such as forward propagation, 
+      backpropagation, gradient descent, Jacobian computation, and the 
+      chain rule. Evaluated to recognize handwritten digits from the MNIST database with
+      over 98% accuracy.
     `,
-    projectImage: "digit_recognizer.png",
-    projectLink: "https://github.com/Mimsqueeze/Digit-Recognition",
+    projectImage: "deepcore.png",
+    projectLink: "https://github.com/Mimsqueeze/DeepCore",
   },
   {
     // EmotionAI
@@ -50,6 +45,28 @@ const projects: Array<ProjectType> = [
     `,
     projectImage: "emotion_ai.png",
     projectLink: "https://github.com/Mimsqueeze/Emotion-AI",
+  },
+  {
+    // Digit Recognizer
+    projectHeader: "Digit Recognizer",
+    projectSubHeader: "An application that recognizes handwritten digits.",
+    projectDescription: `
+      Developed a C++ implementation of a multi-layer convolutional neural
+      network from scratch using Eigen3, a powerful linear algebra
+      library. It utilizes deep learning techniques to recognize
+      handwritten digits given from the
+      <a
+        href="http://yann.lecun.com/exdb/mnist/index.html"
+        target="_blank"
+        className="text-primary-700"
+      >
+        MNIST
+      </a>
+      database. The program takes inputs 28x28 pixel images of a
+      handwritten digit and predicts the corresponding numerical value.
+    `,
+    projectImage: "digit_recognizer.png",
+    projectLink: "https://github.com/Mimsqueeze/Digit-Recognition",
   },
   {
     // SORTING SIMULATOR
