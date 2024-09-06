@@ -55,7 +55,7 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <p className={`${headerDescriptionSize} mt-8`}>
-              Hi! I'm Minsi Hu. I'm currently a senior attending the
+              Hi! I'm Minsi Hu. I'm currently a junior attending the
               University of Maryland, pursuing a double degree in Applied 
               Mathematics and Computer Science.
               <br></br>
