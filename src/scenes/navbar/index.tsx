@@ -1,4 +1,4 @@
-import Logo from "/icon.svg";
+import Logo from "/icon.png";
 import { SiGithub } from "react-icons/si"
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
