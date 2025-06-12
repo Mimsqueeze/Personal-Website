@@ -1,23 +1,17 @@
 import HText from "@/shared/HText";
 import { SelectedPage, SkillType } from "@/shared/types";
 import {
-  SiLinux,
-  SiReact,
   SiTypescript,
   SiJavascript,
   SiCplusplus,
   SiC,
   SiHtml5,
   SiCss3,
-  SiTailwindcss,
   SiPython,
   SiCsharp,
   SiOcaml,
   SiRust,
-  SiTensorflow,
   SiR,
-  SiPandas,
-  SiOpencv,
   SiNvidia,
 } from "react-icons/si";
 
