@@ -38,7 +38,7 @@ const Home = ({ setSelectedPage }: Props) => {
               target="_blank"
               className={`basis-3/5 text-primary-500 ${subHeaderSize}`}
             >
-              CS and Mathematics @ University of Maryland
+              CS and Math @ University of Maryland
             </a>
           </motion.div>
 
@@ -55,14 +55,11 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <p className={`${headerDescriptionSize} mt-8`}>
-              Hi! I'm Minsi Hu. I'm currently a junior attending the
-              University of Maryland, pursuing a double degree in Applied 
-              Mathematics and Computer Science.
+              Hi! I'm Minsi Hu. I'm an incoming M.S. Computer Science student at the University of Maryland. 
               <br></br>
-              <br></br>
-              I am highly enthusiastic about the fields of computer
-              science and mathematics, with a particular interest in machine
-              learning and artificial intelligence.
+              <br></br> 
+              I love learning about both computer science and mathematics, and I've always been drawn to the beauty of how deeply intertwined they are with one another.
+              Learning about and understanding one subject boosts my appreciation and passion for studying the other.
             </p>
           </motion.div>
         </div>

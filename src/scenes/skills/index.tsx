@@ -105,42 +105,6 @@ const skills: Array<SkillType> = [
     description:
     "Exceptional in CUDA programming to create GPU-accelerated applications.",
   },
-  {
-    icon: <SiTensorflow className={iconStyle} />,
-    title: "TensorFlow",
-    description:
-    "Versed in using Tensorflow to craft deep neural networks for machine learning applications.",
-  },
-  {
-    icon: <SiPandas className={iconStyle} />,
-    title: "Pandas",
-    description:
-    "Experienced in using Pandas for data processing and manipulation for machine learnig applications.",
-  },
-  {
-    icon: <SiOpencv className={iconStyle} />,
-    title: "OpenCV",
-    description:
-    "Well-versed in utilizing OpenCV's image processing and recognition capabilities for machine learning applications.",
-  },
-  {
-    icon: <SiReact className={iconStyle} />,
-    title: "React",
-    description:
-    "Practiced in crafting elegant, modular web applications with React.",
-  },
-  {
-    icon: <SiTailwindcss className={iconStyle} />,
-    title: "Tailwind CSS",
-    description:
-    "Proficient in using Tailwind CSS to craft simple yet elegant web applications.",
-  },
-  {
-    icon: <SiLinux className={iconStyle} />,
-    title: "Linux OS",
-    description:
-    "Proficient in utilizing the Linux OS for developing applications.",
-  },
 ];
 
 type Props = {
@@ -171,7 +135,7 @@ const Skills = ({ setSelectedPage }: Props) => {
           >
             <HText size={headerSize}>SKILLS</HText>
             <p className={`my-5 ${headerDescriptionSize}`}>
-              Some technologies I'm familiar with.
+              Some technologies I'm familiar with :D
             </p>
           </motion.div>
 

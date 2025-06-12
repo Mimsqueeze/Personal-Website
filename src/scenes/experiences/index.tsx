@@ -24,17 +24,15 @@ const experiences: Array<ExperienceType> = [
     methods (functional connectivity, graph centralities) and machine 
     learning models (SVMs, MLPs, CNNs) for classifying 
     electroencephalography (EEG) data. 
-    Currently investigating the viability of deep neural networks as 
-    classification algorithms for EEG and utilizing saliency methods 
-    (heat maps) as a post-hoc analysis to reveal insights into important 
-    connections between different brain regions.
+    Currently exploring learning-based 3D vision, generative models for 3D, and corner camera computer vision topics with 
+    Dr. Jia-Bin Huang in the UMD Vision and Learning Lab.
     `,
     experienceImage: "easy_smap.svg",
     experienceImage2: "accuracy.svg",
   },
   {
     // Teaching Assistant
-    experienceHeader: "Teaching Assistant",
+    experienceHeader: "Course Instructor and Teaching Assistant",
     experienceSubHeader: `University of Maryland, 
       <a
         href="https://www.cs.umd.edu/"
@@ -45,13 +43,13 @@ const experiences: Array<ExperienceType> = [
       </a>
     `,
     experienceDescription: `
+      Instructor and facilitator for CMSC389E: Digital Logic Design Through Minecraft.
       Teaching Assistant for the 
-      CMSC132: Object-Oriented Programming II, 
+      CMSC132: Object-Oriented Programming, 
       CMSC216: Introduction to Computer Systems, 
       CMSC330: Organization of Programming Languages, and 
-      STAT410: Introduction to Probability Theory courses. 
-      Taught discussion sections, held office hours, and 
-      designed coursework for over 2100 students.
+      STAT410: Introduction to Probability Theory courses.
+      Taught discussion sections, held office hours, and designed coursework for over 3000 students.
     `,
     experienceImage: "department_of_cs_logo.png",
     experienceImage2: "university-of-maryland-logo.png",
