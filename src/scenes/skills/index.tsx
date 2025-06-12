@@ -13,6 +13,8 @@ import {
   SiRust,
   SiR,
   SiNvidia,
+  SiLatex,
+  SiAmazonaws,
 } from "react-icons/si";
 
 import { BiLogoJava } from "react-icons/bi";
@@ -98,6 +100,18 @@ const skills: Array<SkillType> = [
     title: "CUDA",
     description:
     "Exceptional in CUDA programming to create GPU-accelerated applications.",
+  },
+  {
+    icon: <SiLatex className={iconStyle} />,
+    title: "LaTeX",
+    description:
+    "Proficient in LaTeX for creating professional documents, research papers, and mathematical typesetting.",
+  },
+  {
+    icon: <SiAmazonaws className={iconStyle} />,
+    title: "AWS",
+    description:
+    "Experienced in AWS cloud services for deploying scalable applications and managing cloud infrastructure.",
   },
 ];
 
