@@ -9,8 +9,8 @@ type Props = {
 const experiences: Array<ExperienceType> = [
     {
     // Software Engineering Intern
-    experienceHeader: "Software Engineer Intern",
-    experienceSubHeader: `University of Maryland, 
+    experienceHeader: "Software Engineer Intern @ Capital One",
+    experienceSubHeader: `
       <a
         href="https://www.capitalonecareers.com/mclean"
         target="_blank"
