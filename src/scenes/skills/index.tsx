@@ -46,7 +46,7 @@ const skills: Array<SkillType> = [
     icon: <SiPython className={iconStyle} />,
     title: "Python",
     description:
-    "Skilled in levereging Python for data science, machine learning, web scraping, and image recognition tasks.",
+    "Skilled in leveraging Python for data science, machine learning, web scraping, and image recognition tasks.",
   },
   {
     icon: <SiOcaml className={iconStyle} />,

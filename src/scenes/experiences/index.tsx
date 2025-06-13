@@ -7,6 +7,25 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 const experiences: Array<ExperienceType> = [
+    {
+    // Software Engineering Intern
+    experienceHeader: "Software Engineer Intern",
+    experienceSubHeader: `University of Maryland, 
+      <a
+        href="https://www.capitalonecareers.com/mclean"
+        target="_blank"
+        className="text-primary-700 underline"
+      >
+        Capital One, McLean
+      </a>
+    `,
+    experienceDescription: `
+    Developing an AI chatbot to automate data onboarding for fraud detection, collections, and customer service use cases. 
+    Streamlining manual workflows to accelerate use case delivery and free up the capacity of core team engineers.
+    `,
+    experienceImage: "capital-one-logo.png",
+    experienceImage2: "",
+  },
   {
     // Research Assistant
     experienceHeader: "Undergraduate Research Assistant",
