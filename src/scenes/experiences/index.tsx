@@ -39,12 +39,8 @@ const experiences: Array<ExperienceType> = [
       </a>
     `,
     experienceDescription: `
-    Developed software to assess the efficacy of various feature extraction 
-    methods (functional connectivity, graph centralities) and machine 
-    learning models (SVMs, MLPs, CNNs) for classifying 
-    electroencephalography (EEG) data. 
-    Currently exploring learning-based 3D vision, generative models for 3D, and corner camera computer vision topics with 
-    Dr. Jia-Bin Huang in the UMD Vision and Learning Lab.
+    Previously explored feature extraction and learning-based methods for processing the human brain’s electroencephalography (EEG) data with the Neuromotor Control and Learning Laboratory (NMCL). 
+    Currently working with Dr. Jia-Bin Huang in the UMD Vision and Learning Lab on generative models. Previously focused on multi-subject personalization in text-to-image synthesis (CVPR 2026). Now developing agentic planning systems for educational video generation, targeting NeurIPS 2026.
     `,
     experienceImage: "easy_smap.svg",
     experienceImage2: "accuracy.svg",
